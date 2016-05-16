@@ -8,9 +8,10 @@ First, navigate to the project root folder and install all of the node dependenc
 npm install
 ```
 
-Then, set up your MySQL databases
+Then, harden you MySQL installation and set up your MySQL databases
 
 ```MySQL
+run mysql_secure_installation;
 create database medconnect;
 use medconnect;
 source /path/to/project/config/schema.sql
